@@ -75,6 +75,19 @@ export default {
       popupOptions: { width: 580, height: 400 }
     },
 
+    vk: {
+      name: 'vk',
+      url: '/auth/vk',
+      authorizationEndpoint: 'https://oauth.vk.com/authorize',
+      redirectUri: getRedirectUri('/'),
+      requiredUrlParams: ['display', 'scope'],
+      scope: ['email'],
+      scopeDelimiter: ',',
+      display: 'popup',
+      oauthType: '2.0',
+      popupOptions: { width: 580, height: 400 }
+    },
+
     google: {
       name: 'google',
       url: '/auth/google',
